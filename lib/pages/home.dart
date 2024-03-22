@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_kuis/models/tourism_place.dart';
 import 'package:latihan_kuis/pages/detail.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:latihan_kuis/pages/login.dart';
 
 class HomePage extends StatelessWidget {
@@ -150,10 +149,10 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Future<void> _launchURL(String strUrl) async {
-    Uri url = Uri.parse(strUrl);
-    if (!await launchUrl(url)) {
-      throw Exception('Could not launch $url');
-    }
-  }
+  // Future<void> _launchURL(String strUrl) async {
+  //   Uri url = Uri.parse(strUrl);
+  //   if (!await launchUrl(url)) {
+  //     throw Exception('Could not launch $url');
+  //   }
+  // }
 }
