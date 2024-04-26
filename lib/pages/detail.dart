@@ -37,13 +37,11 @@ class _DetailPageState extends State<DetailPage> {
 
     return SizedBox(
       height: 180,
-      child: Expanded(
-        child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: 3,
-            itemBuilder: (context, index) =>
-                Image.network(widget.place.imageUrls[index])),
-      ),
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: 3,
+          itemBuilder: (context, index) =>
+              Image.network(widget.place.imageUrls[index])),
     );
   }
 

@@ -40,9 +40,7 @@ class HomePage extends StatelessWidget {
                   style: const TextStyle(
                       fontSize: 22, fontWeight: FontWeight.bold),
                 ),
-                const Text(
-                  "Welcome to Latihan Quiz Travel.",
-                ),
+                const Text("Welcome to Latihan Quiz Travel.")
               ],
             ),
             _logout(context)
@@ -110,9 +108,8 @@ class HomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => DetailPage(
-                          place: tourismPlaceList[index],
-                        ),
+                        builder: (context) =>
+                            DetailPage(place: tourismPlaceList[index]),
                       ),
                     );
                   },
@@ -148,11 +145,4 @@ class HomePage extends StatelessWidget {
       icon: const Icon(Icons.logout),
     );
   }
-
-  // Future<void> _launchURL(String strUrl) async {
-  //   Uri url = Uri.parse(strUrl);
-  //   if (!await launchUrl(url)) {
-  //     throw Exception('Could not launch $url');
-  //   }
-  // }
 }
