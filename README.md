@@ -1,3 +1,5 @@
-# latihan_kuis
+# Latihan Kuis
 
-Waduh
+## Screenshot &nbsp; 📷
+
+![screenshot app](ss.png)
